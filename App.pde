@@ -3,7 +3,7 @@ Grid mainGrid; // classe que abstrai os processos das celulas
 void setup() // chamada no inicio do processo
 {
   size(600,400);
-  
+    
   rows = floor(height/w);
   cols = floor(width/w);
   

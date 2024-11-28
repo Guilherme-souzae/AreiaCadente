@@ -5,7 +5,10 @@ void keyPressed()
     try
     {
       salvarEstado("savestate.txt");
-    } catch (Exception e) { };
+    } catch (Exception e) 
+    {
+      println("Ermac: " + e.getMessage());
+    };
   }
   else if (key == 'l' || key == 'L')
   {
@@ -15,7 +18,7 @@ void keyPressed()
     } 
     catch (Exception e)
     {
-      println("arquivo nao encontrado");  
+      println("Ermac: " + e.getMessage());
     }
   }
 }
