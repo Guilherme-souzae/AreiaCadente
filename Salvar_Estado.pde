@@ -2,11 +2,21 @@ void keyPressed()
 {
   if (key == 's' || key == 'S')
   {
-    salvarEstado("savestate.txt");
+    try
+    {
+      salvarEstado("savestate.txt");
+    } catch (Exception e) { };
   }
   else if (key == 'l' || key == 'L')
   {
-    carregarEstado("savestate.txt");
+    try
+    {
+      carregarEstado("savestate.txt");
+    } 
+    catch (Exception e)
+    {
+      println("arquivo nao encontrado");  
+    }
   }
 }
 
